@@ -1,0 +1,28 @@
+.error > h1 {
+    font-weight: 700;
+    font-size: 128px;
+    color: #F35A05;
+    line-height: 147px;
+    text-align: center;
+}
+.error > p {
+    font-size: 32px;
+    color: #564F4F;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: center;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+/* @MEDIA = = = = = = = = =  = = = = = = = = = = = = = > */
+@media (max-width: 767px) {
+    .error > h1 {
+        font-size: 38px;
+        line-height: 40px;
+    }
+    .error > p {
+        font-size: 18px;
+        line-height: 18px;    
+    }
+}

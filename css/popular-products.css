@@ -1,0 +1,99 @@
+/* Popular Porducts  = = = = = = = = = = = = = = = = = > */
+.popular {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    background: #FFF3EA;
+}
+.popular__inner {
+    display: grid;
+    grid-gap: 25px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Popular Porducts Item = = = = = = = = = = = = = = = > */
+.popular-item {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 15px;
+    box-sizing: border-box;
+    transition: 0.3s ease all;
+    border: 1px dashed #E2E3EF;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.139);
+}
+.popular-item:hover {
+    border: 3px dashed #F35A05;
+    box-shadow: 0px 8px 60px rgba(255, 102, 36, 0.224);
+}
+.popular-item:hover .popular__product-btn {
+    background: #F35A05;
+}
+.popular-item:hover .popular__product-container > hr {
+    border-bottom: 3px dashed #F35A05;
+    box-shadow: 0px 8px 60px rgba(255, 102, 36, 0.224);
+}
+.popular__product-container {
+    padding: 30px;
+    display: flex;
+    grid-gap: 10px;
+    flex-direction: column;
+}
+.popular__product-container > hr {
+    border: none;
+    transition: 0.5s ease all;
+    border-bottom: 3px dashed #999999;
+}
+.popular__product-icon {
+    width: 100%;
+    display: flex;
+    grid-gap: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #999999;
+    align-items: center;
+    justify-content: center;
+}
+.popular__product-icon > i {
+    font-size: 28px;
+}
+.popular__product-btn {
+    border: none;
+    color: #FFF;
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #999999;
+    text-decoration: none;
+    flex-direction: column;
+    transition: 0.5s ease all;
+    box-shadow: 0px 8px 60px rgba(69, 69, 69, 0.139);
+}
+
+/* @Media  = = = = = = = = = = = = = = = = = = = = = = > */
+@media(max-width:1250px) {
+    .popular__inner {
+        grid-gap: 15px;
+        margin-top: 25px;
+    }
+    .popular__product-container {
+        padding: 10px 0;
+    }
+}
+@media(max-width:1050px) {
+    .popular__inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:600px) {
+    .popular__inner {
+        grid-template-columns: 1fr;
+    }
+}
